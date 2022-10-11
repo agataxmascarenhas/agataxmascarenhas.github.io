@@ -1,0 +1,90 @@
+:root {
+  --color-text-primary: #002324;
+  --color-text-secondary: #fff;
+  --color-primary: #6608c5;
+}
+
+/*styles reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* end of styles reset*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.header-title span {
+  color: var(--color-primary);
+}
+
+.about {
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary);
+}
+
+.about-content {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-primary {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.button:hover {
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary);
+}
+
+.button:focus {
+  border-color: var(--color-text-primary);
+  border-width: 5px;
+}
+
+.button-secondary {
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-text-primary);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "agataxmascarenhas.github.io",
+  "version": "1.0.0",
+  "description": "My first Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agataxmascarenhas/agataxmascarenhas.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agataxmascarenhas/agataxmascarenhas.github.io/issues"
+  },
+  "homepage": "https://github.com/agataxmascarenhas/agataxmascarenhas.github.io#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

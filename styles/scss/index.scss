@@ -1,54 +1,290 @@
-/* NAO ESQUECER DO PONTO E VRIGULA NO FINAL */
-
-/* declarar variaveis 
-$color-text-primary: #002324;
-$color-text-primary: #002324;
-$color-text-secondary: #fff;
-$color-primary: #6608c5;
-$color-secondary: #fff;*/
-
 /* buscar as variaveis - atençao à ordem dos imports */
 @import "variables";
 @import "buttons";
 
-/* cor nao é necessário o var */
-.header-title span {
-  color: $color-primary;
+/* styles reset - usar border-box width=content+padding+border */
+* {
+  box-sizing: border-box;
 }
 
-/* meter várias classes umas dentro de outras - nesting {} 
-.projects-article {
-  .button-primary {
-    margin-right: 15px;
-  }
-
-  h3 {
-    font-weight: 500;
-  }
-} */
-
+/* estilo do body - generalizado */
 body {
-  background-color: pink;
-  color: red;
+  font-family: "Poppins", sans-serif;
+  margin: 0; /* tinha uma margin*/
 }
-/* & after :: pseudo elemento */
 
-/* meter tudo dentro da classe que é do seu elemento - media query dentro da classe*/
+footer {
+  background-color: $color-text-primary;
+  width: auto;
+  height: 246px;
+}
 
+/* retirar estilos da lista que vem por default assim como o padding e a margin */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 61px 0px 0px 0px;
+}
+
+/* titulo h2 é todo igual ao longo do documento*/
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+/* end of styles reset*/
+
+/* header section */
+.header {
+  display: flex;
+  height: 100vh; /*100% da viewport height*/
+  align-items: center; /*temos de alinhar devido ao height*/
+  justify-content: center; /* centra os items */
+}
+
+.header-content {
+  text-align: center; /*alinha o texto dentro da div*/
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
+  color: $color-text-primary;
+
+  span {
+    /* como nao ha mais spans pode ficar assim senao tinha de ser .header-title span*/
+    color: $color-primary;
+  }
+}
+/* end of header section */
+
+/* about me section */
+.about {
+  position: relative;
+  background-color: $color-primary;
+  color: $color-text-secondary;
+  padding: 100px 0 120px;
+  margin-bottom: auto;
+  clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 100%);
+}
+
+.about-content {
+  @media (min-width: 992px) {
+    display: flex;
+    max-width: 960px;
+    margin: 65px auto 0px auto;
+  }
+}
+
+.about-description {
+  @media (min-width: 992px) {
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0px 70px 90px 70px;
+  }
+  @media (max-width: 991px) {
+    margin: 40px 40px 40px 40px;
+    text-align: center;
+  }
+  p {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.about-img {
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: block;
+
+  @media (min-width: 992px) {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 991px) {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button-secondary {
+  @media (max-width: 991px) {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.about-quote {
+  text-align: center;
+  margin-top: 88px;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+cite {
+  font-style: normal;
+  line-height: 1.4;
+  font-weight: 400;
+}
+/* end of about me section */
+
+/* projects section  */
 .projects-article {
-  padding: 30px 15px;
-
-  .button-primary {
-    margin-right: 15px;
-  }
-
-  h3 {
-    font-weight: 500;
-  }
+  padding: 40px;
+  text-align: justify;
 
   @media (min-width: 992px) {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
   }
+
+  div {
+    padding-right: 40px;
+  }
+
+  .button {
+    margin: 10px;
+  }
+}
+
+.projects-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* end of projects section */
+
+/* contact section */
+.contact {
+  background-color: $color-primary;
+  color: $color-text-secondary;
+  padding-top: 150px;
+  clip-path: polygon(0% 25%, 100% 9%, 100% 100%, 0% 100%);
+}
+
+.contact-content {
+  text-align: center;
+  align-items: center;
+  padding: 0px 100px 100px 100px;
+}
+/* end of contact section */
+
+/* footer section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    color: $color-text-secondary;
+    margin: 39px 0px;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+
+.social-item {
+  display: inline-block; /* para conseguir dar medidas aos icones*/
+  background-color: $color-secondary;
+  border-radius: 50%;
+  padding: 5px; /*senao fica muito pequeno em relacao ao circulo*/
+  margin: 0px 10px 0px 10px;
+
+  &:hover {
+    background-color: $color-primary;
+    border-color: $color-secondary;
+  }
+}
+
+.github {
+  background-image: url(../../assets/icons/icon-github.png);
+}
+
+.linkedin {
+  background-image: url(../../assets/icons/icon-linkedin.png);
+}
+
+.youtube {
+  background-image: url(../../assets/icons/icon-youtube.png);
+}
+.twitter {
+  background-image: url(../../assets/icons/icon-twitter.png);
+}
+
+li {
+  animation: float 8s ease-in-out infinite;
+
+  &:first-child {
+    animation-delay: 1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 3s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 4s;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50% {
+      transform: translateY(
+        -20px
+      ); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100% {
+      transform: translateY(
+        0
+      ); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+  }
+}
+
+.icons-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
 }

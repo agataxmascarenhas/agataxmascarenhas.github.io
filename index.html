@@ -19,9 +19,10 @@
 
     <script src="script.js" defer></script>
 
+    <!-- link to the icon tab sheet-->
+    <link rel="icon" href="./assets/icons/favicon.ico" />
     <title>Ágata Mascarenhas Portfolio</title>
   </head>
-
   <body>
     <header class="header">
       <div class="header-content">
@@ -29,9 +30,7 @@
           Hello, my name is <span>Ágata Mascarenhas</span> <br />and I´m a Full
           Stack Web Developer!
         </h1>
-        <a href="#about" class="button button-primary">About me</a>
-        <a href="#projects" class="button button-secondary">Projects</a>
-        <a href="#contacts" class="button button-primary">Contacts</a>
+        <a href="#about" class="button button-primary">Find out more</a>
       </div>
     </header>
 
@@ -40,8 +39,8 @@
         <h2>About me</h2>
         <div class="about-content">
           <img
-            src="./assets/image/mariaalbertinadev.webp"
-            alt="developer maria albertina working on a pc"
+            src="./assets/image/AgataMascarenhas.webp"
+            alt="Agata Mascarenhas working on a pc"
             class="about-img"
           />
           <div class="about-description">
@@ -57,11 +56,11 @@
               fugiat id facere, magnam a repellat sint nisi quidem! Ad,
               dignissimos.
             </p>
-            <a href="" class="button button-tertiary">View resume</a>
+            <a href="" class="button button-secondary">View resume</a>
           </div>
         </div>
         <div class="about-quote">
-          <blockquote>Don´t comment bad code - rewrite it</blockquote>
+          <blockquote>"Don´t comment bad code - rewrite it."</blockquote>
           <cite>Brian Kernighan</cite>
         </div>
       </section>
@@ -79,13 +78,13 @@
               exercitationem asperiores soluta adipisci.
             </p>
             <a href="" class="button button-primary">Source Code</a>
-            <a href="" class="button button-secondary">View Project</a>
+            <a href="" class="button button-tertiary">View Project</a>
           </div>
 
           <img
+            class="projects-img"
             src="./assets/image/project1.webp"
             alt="image of a website desktop"
-            width="100%"
           />
         </article>
 
@@ -99,12 +98,12 @@
               exercitationem asperiores soluta adipisci.
             </p>
             <a href="" class="button button-primary">Source Code</a>
-            <a href="" class="button button-secondary">View Project</a>
+            <a href="" class="button button-tertiary">View Project</a>
           </div>
           <img
+            class="projects-img"
             src="./assets/image/project1.webp"
             alt="image of a website desktop"
-            width="100%"
           />
         </article>
 
@@ -118,47 +117,52 @@
               exercitationem asperiores soluta adipisci.
             </p>
             <a href="" class="button button-primary">Source Code</a>
-            <a href="" class="button button-secondary">View Project</a>
+            <a href="" class="button button-tertiary">View Project</a>
           </div>
           <img
+            class="projects-img"
             src="./assets/image/project1.webp"
             alt="image of a website desktop"
-            width="100%"
           />
         </article>
       </section>
 
       <section class="contact" id="contacts">
-        <h2>Contacts</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est
-          eligendi modi autem a itaque vero dignissimos sed, placeat ad dolores
-          quibusdam harum, sequi hic eaque natus, repudiandae nihil optio?
-        </p>
+        <h2>Contact</h2>
+        <div class="contact-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est
+            eligendi modi autem a itaque vero dignissimos sed, placeat ad
+            dolores quibusdam harum, sequi hic eaque natus, repudiandae nihil
+            optio?
+          </p>
 
-        <a
-          href="mailto:agata.vmascarenhas@gmail.com"
-          class="button button-secondary"
-          >Let´s Talk</a
-        >
+          <a
+            href="mailto:agata.vmascarenhas@gmail.com"
+            class="button button-secondary"
+            >Let´s Talk</a
+          >
+        </div>
       </section>
     </main>
 
     <footer class="footer-section">
-      <ul>
-        <li class="social-item">
-          <a href="" class="social-link github"></a>
-        </li>
-        <li class="social-item">
-          <a href="" class="social-link linkedin"></a>
-        </li>
-        <li class="social-item">
-          <a href="" class="social-link youtube"></a>
-        </li>
-        <li class="social-item">
-          <a href="" class="social-link twitter"></a>
-        </li>
-      </ul>
+      <div class="icons-wrapper">
+        <ul>
+          <li class="social-item">
+            <a href="" class="social-link github"></a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link linkedin"></a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link youtube"></a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link twitter"></a>
+          </li>
+        </ul>
+      </div>
       <p>@2022 - Portfolio Design by Ágata Mascarenhas</p>
     </footer>
   </body>

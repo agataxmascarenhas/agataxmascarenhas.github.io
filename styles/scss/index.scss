@@ -54,15 +54,15 @@ h3 {
 }
 
 .header-title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
-  color: $color-text-primary;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
+	color: $color-text-primary;
 
-  span {
-    /* como nao ha mais spans pode ficar assim senao tinha de ser .header-title span*/
-    color: $color-primary;
-  }
+	span {
+	/* como nao ha mais spans pode ficar assim senao tinha de ser .header-title span*/
+		color: $color-primary;
+	}
 }
 /* end of header section */
 

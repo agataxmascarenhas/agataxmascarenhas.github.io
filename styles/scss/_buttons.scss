@@ -11,12 +11,13 @@
 }
 
 .button-primary {
-  color: $color-primary; /*cor do texto do botao*/
-  border: 2px solid $color-primary;
-  &:hover {
-    color: $color-secondary;
-    background-color: $color-primary;
-  }
+	background-color: $color-primary;
+	color: $color-secondary; /*cor do texto do botao*/
+	border: 2px solid $color-primary;
+		&:hover {
+			color: $color-primary;
+			background-color: $color-secondary;
+		}
 }
 
 .button-secondary {

@@ -4,62 +4,73 @@
 
 /* styles reset - usar border-box width=content+padding+border */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* estilo do body - generalizado */
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0; /* tinha uma margin*/
+	font-family: "Poppins", sans-serif;
+	margin: 0; /* tinha uma margin*/
 }
 
 footer {
-  background-color: $color-text-primary;
-  width: auto;
-  height: 246px;
+	background-color: $color-text-primary;
+	width: auto;
+	height: 246px;
 }
 
 /* retirar estilos da lista que vem por default assim como o padding e a margin */
 ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 61px 0px 0px 0px;
+	list-style-type: none;
+	padding: 0;
+	margin: 61px 0px 0px 0px;
 }
 
 /* titulo h2 é todo igual ao longo do documento*/
 h2 {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-align: center;
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
 }
 /* end of styles reset*/
 
 /* header section */
 .header {
-  display: flex;
-  height: 100vh; /*100% da viewport height*/
-  align-items: center; /*temos de alinhar devido ao height*/
-  justify-content: center; /* centra os items */
-  background-image: url("../../assets/image/anas-alshanti-feXpdV001o4-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+	display: flex;
+	height: 100vh; /*100% da viewport height*/
+	align-items: center; /*temos de alinhar devido ao height*/
+	justify-content: center; /* centra os items */
+	background-image: url("../../assets/image/anas-alshanti-feXpdV001o4-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	div {
+		position: relative;
+		// transition: 2s ease;
+		transition: transform 5s;
+		// transform-origin: -100vh;
+	
+	}
 }
 
 .header-content {
-  text-align: center; /*alinha o texto dentro da div*/
-  background-color: rgb(238, 221, 255);
-  width: auto;
-  padding: 60px 70px;
-  position: relative;
-  bottom: -70vh;
-  border-radius: 8px;
+	text-align: center; /*alinha o texto dentro da div*/
+	background-color: rgb(238, 221, 255);
+	width: auto;
+	padding: 40px 50px;
+	position: relative;
+	bottom: -70vh;
+	border-radius: 8px;
+	@media (max-width: 991px) {
+		width: 250px;
+	}
 }
 
 .mystyle {
@@ -67,26 +78,39 @@ h3 {
 }
 
 .header-title {
-	font-size: 48px;
-	font-weight: 500;
-	line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.4;
 	color: $color-text-secondary;
 	animation: animate 5s 3 steps(30) alternate forwards -0.5s;
 	overflow: hidden;
-	white-space: nowrap;
 
-	@keyframes animate {
-		from {
-			width: 0;
-		}
-		to {
-			width: 1100px;
-		}}
+
+	@media (min-width: 992px) {
+		white-space: nowrap;
+		@keyframes animate {
+				from {
+					width: 0;
+				}
+				to {
+					width: 500px;
+				}}
+	}
+	@media (max-width: 991px) {
+			@keyframes animate {
+				from {
+					height: 0;
+				}
+				to {
+					height: 220px;
+				}}
+	}
 
 	span {
 		color: $color-primary;
 		font-weight: bold;
 	}
+
 }
 /* end of header section */
 
@@ -102,11 +126,11 @@ h3 {
 }
 
 .about-content {
-  @media (min-width: 992px) {
-    display: flex;
-    max-width: 960px;
-    margin: 65px auto 0px auto;
-  }
+	@media (min-width: 992px) {
+		display: flex;
+		max-width: 960px;
+		margin: 65px auto 0px auto;
+	}
 }
 
 .about-description {
@@ -125,23 +149,24 @@ h3 {
 }
 
 .about-img {
-  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 15px;
-  display: block;
+	box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	display: block;
 
-  @media (min-width: 992px) {
-    width: 100%;
-    max-width: 400px;
-    object-fit: cover;
-    margin: 0 auto;
-  }
+	@media (min-width: 992px) {
+		width: 100%;
+		height: 520px;
+		max-width: 400px;
+		object-fit: cover;
+		margin: 0 auto;
+	}
 
-  @media (max-width: 991px) {
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	@media (max-width: 991px) {
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .button-secondary {

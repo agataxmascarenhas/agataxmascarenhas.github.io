@@ -89,20 +89,24 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.header div {
+  position: relative;
+  transition: transform 5s;
+}
 
 .header-content {
   text-align: center; /*alinha o texto dentro da div*/
   background-color: rgb(238, 221, 255);
   width: auto;
-  padding: 60px 70px;
+  padding: 40px 50px;
   position: relative;
   bottom: -70vh;
   border-radius: 8px;
 }
-
-div {
-  position: relative;
-  transition: transform 5s;
+@media (max-width: 991px) {
+  .header-content {
+    width: 250px;
+  }
 }
 
 .mystyle {
@@ -110,26 +114,37 @@ div {
 }
 
 .header-title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.4;
   color: #fff;
   animation: animate 5s 3 steps(30) alternate forwards -0.5s;
-  margin: 20px 20px;
-  line-height: 70px;
   overflow: hidden;
-  white-space: nowrap;
 }
-@keyframes animate {
-  from {
-    width: 0;
+@media (min-width: 992px) {
+  .header-title {
+    white-space: nowrap;
   }
-  to {
-    width: 1100px;
+  @keyframes animate {
+    from {
+      width: 0;
+    }
+    to {
+      width: 500px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  @keyframes animate {
+    from {
+      height: 0;
+    }
+    to {
+      height: 220px;
+    }
   }
 }
 .header-title span {
-  /* como nao ha mais spans pode ficar assim senao tinha de ser .header-title span*/
   color: #6608c5;
   font-weight: bold;
 }
@@ -179,6 +194,7 @@ div {
 @media (min-width: 992px) {
   .about-img {
     width: 100%;
+    height: 520px;
     max-width: 400px;
     object-fit: cover;
     margin: 0 auto;
@@ -297,14 +313,6 @@ cite {
   background-image: url(../../assets/icons/icon-linkedin.png);
 }
 
-.youtube {
-  background-image: url(../../assets/icons/icon-youtube.png);
-}
-
-.twitter {
-  background-image: url(../../assets/icons/icon-twitter.png);
-}
-
 li {
   animation: float 8s ease-in-out infinite;
 }
@@ -313,12 +321,6 @@ li:first-child {
 }
 li:nth-child(2) {
   animation-delay: 2s;
-}
-li:nth-child(3) {
-  animation-delay: 3s;
-}
-li:nth-child(4) {
-  animation-delay: 4s;
 }
 @keyframes float {
   0% {

@@ -62,14 +62,6 @@ h3 {
   border-radius: 8px;
 }
 
-div {
-	position: relative;
-	// transition: 2s ease;
-	transition: transform 5s;
-	// transform-origin: -100vh;
-
-}
-
 .mystyle {
 	transform: translateY(-70vh);
 }
@@ -80,8 +72,6 @@ div {
 	line-height: 1.4; /*distancia entre linhas este numero vezes a tamanho da font do elemento*/
 	color: $color-text-secondary;
 	animation: animate 5s 3 steps(30) alternate forwards -0.5s;
-	margin: 20px 20px;
-	line-height: 70px;
 	overflow: hidden;
 	white-space: nowrap;
 
@@ -94,7 +84,6 @@ div {
 		}}
 
 	span {
-	/* como nao ha mais spans pode ficar assim senao tinha de ser .header-title span*/
 		color: $color-primary;
 		font-weight: bold;
 	}
@@ -260,13 +249,6 @@ cite {
   background-image: url(../../assets/icons/icon-linkedin.png);
 }
 
-.youtube {
-  background-image: url(../../assets/icons/icon-youtube.png);
-}
-.twitter {
-  background-image: url(../../assets/icons/icon-twitter.png);
-}
-
 li {
   animation: float 8s ease-in-out infinite;
 
@@ -275,13 +257,6 @@ li {
   }
   &:nth-child(2) {
     animation-delay: 2s;
-  }
-  &:nth-child(3) {
-    animation-delay: 3s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 4s;
   }
 
   @keyframes float {

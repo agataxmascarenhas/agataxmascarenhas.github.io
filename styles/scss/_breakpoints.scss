@@ -1,0 +1,10 @@
+$breakpoints: (
+	lg: 991.98px,
+);
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@mixin lg {
+	@media (max-width: map-get($breakpoints, "lg")) {
+	  @content;
+	}
+}

@@ -152,7 +152,7 @@ h3 {
 /* end of header section */
 /* about me section */
 .about {
-  height: 150vh;
+  height: 110vh;
   position: relative;
   background-color: #6608c5;
   color: #fff;
@@ -183,7 +183,7 @@ h3 {
     margin: 0px 70px 90px 70px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .about-description {
     margin: 40px 40px 40px 40px;
     text-align: center;

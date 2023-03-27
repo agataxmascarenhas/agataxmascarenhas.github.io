@@ -156,15 +156,18 @@ h3 {
   position: relative;
   background-color: #6608c5;
   color: #fff;
-  padding: 100px 0px 120px 0px;
+  padding: 100px 0px 141px 0px;
   margin-bottom: auto;
   clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 100%);
-  margin: 150px 0px 200px 0px;
+  margin: 100px 0px 100px 0px;
 }
 @media (max-width: 991px) {
   .about {
     clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 95%);
   }
+}
+.about h2 {
+  padding-top: 20px;
 }
 
 @media (min-width: 992px) {

@@ -159,7 +159,7 @@ h3 {
   padding: 100px 0px 141px 0px;
   margin-bottom: auto;
   clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 100%);
-  margin: 100px 0px 100px 0px;
+  margin-top: 100px;
 }
 @media (max-width: 991px) {
   .about {

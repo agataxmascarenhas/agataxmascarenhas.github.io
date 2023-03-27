@@ -255,6 +255,11 @@ cite {
 
 /* end of about me section */
 /* projects section  */
+@media (max-width: 991.98px) {
+  .Projects h2 {
+    margin-top: 0px;
+  }
+}
 .projects-article {
   padding: 40px;
   text-align: justify;

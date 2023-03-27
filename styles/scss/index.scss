@@ -211,6 +211,11 @@ cite {
 /* end of about me section */
 
 /* projects section  */
+@include lg {
+	.Projects h2 {
+		margin-top: 0px;
+	}
+}
 .projects-article {
   padding: 40px;
   text-align: justify;

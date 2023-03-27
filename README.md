@@ -9,4 +9,4 @@ To make this portfolio I used HTML and SCSS, and will also use JAVASCRIPT in the
 </picture>
 
 ### Here is a preview of my work!
-  ![preview](https://user-images.githubusercontent.com/93822452/197871414-eeb04c81-afb6-4c11-a4cb-582f5c2128b9.png)
+  ![portfolio_img](https://user-images.githubusercontent.com/93822452/228090909-7c75bd57-2f67-46d0-90db-102e0a0f6aa2.png)

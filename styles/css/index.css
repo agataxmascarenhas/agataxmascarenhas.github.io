@@ -152,18 +152,17 @@ h3 {
 /* end of header section */
 /* about me section */
 .about {
-  height: 110vh;
+  height: 100%;
   position: relative;
   background-color: #6608c5;
   color: #fff;
-  padding: 100px 0 120px;
+  padding: 100px 0px 120px 0px;
   margin-bottom: auto;
   clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 100%);
-  padding: 150px 0 120px;
+  padding: 150px 0px 200px 0px;
 }
 @media (max-width: 991px) {
   .about {
-    height: 170vh;
     clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 95%);
   }
 }
@@ -239,9 +238,10 @@ blockquote {
   line-height: 36px;
   font-size: 24px;
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   blockquote {
-    font-size: 14px;
+    font-size: 20px;
+    margin: 26px;
   }
 }
 

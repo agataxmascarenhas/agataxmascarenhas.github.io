@@ -115,7 +115,7 @@ h3 {
 
 /* about me section */
 .about {
-	height: 100vh;
+	height: 150vh;
 	position: relative;
 	background-color: $color-primary;
 	color: $color-text-secondary;
@@ -123,10 +123,10 @@ h3 {
 	margin-bottom: auto;
 	clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 100%);
 	@media (max-width: 991px) {
-		height: 180vh;
+		height: 170vh;
 		clip-path: polygon(0% 10%, 100% 10%, 100% 87%, 98% 87%, 0% 95%);
 		}
-		padding-bottom: 20px;
+		padding: 150px 0 120px;
 }
 
 .about-content {
